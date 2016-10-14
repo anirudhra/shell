@@ -1,0 +1,14 @@
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+export PATH="/usr/local/sbin:$PATH"
+
+export P4USER=aacharya
+export P4PORT=atlvp4p01.amd.com:1677
+alias p4login='p4 -p $P4PORT login -a'
+
+source ~/.aliases
+
+cowsay $(fortune -a)
+
