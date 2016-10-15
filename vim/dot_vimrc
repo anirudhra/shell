@@ -3,10 +3,29 @@ source $VIMRUNTIME/vimrc_example.vim
 source $VIMRUNTIME/mswin.vim
 syntax enable
 set number
+set tabstop=4
+set expandtab
+set softtabstop=4
+set showcmd
+set cursorline
+filetype indent on
+set wildmenu
+set lazyredraw
+set showmatch
+set incsearch
+set hlsearch
+"set foldenable
+
+set backup
+set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set backupskip=/tmp/*,/private/tmp/*
+set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set writebackup
+
+
 set guifont=Menlo\ Regular:h12
 "set guifont=Monospace\ Regular:h12
 colorscheme lucario
-"colorscheme wombat
 set guioptions-=T
 
 set diffexpr=MyDiff()
