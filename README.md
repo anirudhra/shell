@@ -1,16 +1,16 @@
 # shell
-shell/config/vim/brew files for Linux/UNIX
+shell/config/vim/brew files for Linux/UNIX <br>
 
-Contains config files for bash shell, homebrew installation scripts and vim config scripts
-
-To install ConqueTerm: 
-vim <path/>conqueterm_2.2.vmb
-:so %
-:q
-
-Conque Usage:
-:ConqueTermSplit <command> 
-:ConqueTermVSplit <command> 
-:ConqueTermTab <command> 
-
+Contains config files for bash shell, homebrew installation scripts and vim config scripts <br>
+<br>
+To install ConqueTerm:  <br>
+vim <path/>conqueterm_2.2.vmb <br>
+:so % <br>
+:q <br>
+<br>
+Conque Usage: <br>
+:ConqueTermSplit <command>  <br>
+:ConqueTermVSplit <command>  <br>
+:ConqueTermTab <command>  <br>
+<br>
 Use bash instead of <command> to open a shell
