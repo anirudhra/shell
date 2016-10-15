@@ -9,8 +9,8 @@ vim <path/>conqueterm_2.2.vmb <br>
 :q <br>
 <br>
 Conque Usage: <br>
-:ConqueTermSplit <command>  <br>
-:ConqueTermVSplit <command>  <br>
-:ConqueTermTab <command>  <br>
+:ConqueTermSplit < command >  <br>
+:ConqueTermVSplit < command >  <br>
+:ConqueTermTab < command >  <br>
 <br>
 Use bash instead of <command> to open a shell
