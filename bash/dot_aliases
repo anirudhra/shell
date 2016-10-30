@@ -7,6 +7,7 @@ alias ll='ls -la'
  
 ## Show hidden files ##
 alias l.='ls -d .* -FG'
+alias sl='ls'
 
 ## get rid of command not found ##
 alias cd..='cd ..'
