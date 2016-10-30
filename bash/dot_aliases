@@ -69,7 +69,7 @@ alias wget='wget -c'
 alias df='df -H'
 alias du='du -ch'
 
-alias brew_update='brew update && brew upgrade && brew linkapps && brew cleanup && brew cask cleanup'
+alias brew_update='brew update && brew cask update && brew upgrade && brew linkapps && brew cleanup && brew cask cleanup'
 
 alias flushdns='dscacheutil -flushcache'
 
