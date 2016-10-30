@@ -100,4 +100,5 @@ alias textedit='open -a TextEdit'
 # Get rid of those pesky .DS_Store files recursively
 alias dsclean='find . -type f -name .DS_Store -delete'
 
+alias shuf='gshuf'
 
