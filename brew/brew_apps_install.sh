@@ -30,7 +30,8 @@ brew install rename
 brew install watch
 brew install tree
 brew install trash
-brew install imagemagick
+brew install coreutils
+
 echo "Installing command line apps... done!"
 
 #
@@ -43,6 +44,7 @@ brew cask install alfred
 brew cask install gimp
 brew cask install xquartz
 brew cask install osxfuse
+
 echo "Installing GUI apps... done!"
 
 echo "Cleaning up..."
