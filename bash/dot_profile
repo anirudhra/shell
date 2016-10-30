@@ -6,5 +6,9 @@ export PATH="/usr/local/sbin:$PATH"
 
 source ~/.aliases
 
+LESSPIPE=`which src-hilite-lesspipe.sh`
+export LESSOPEN="| ${LESSPIPE} %s"
+export LESS=' -R -X -F '
+
 cowsay $(fortune -a)
 
