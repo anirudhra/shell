@@ -31,6 +31,7 @@ brew install watch
 brew install tree
 brew install trash
 brew install coreutils
+brew install figlet
 
 echo "Installing command line apps... done!"
 
@@ -46,6 +47,8 @@ brew cask install xquartz
 brew cask install osxfuse
 
 echo "Installing GUI apps... done!"
+
+brew linkapps
 
 echo "Cleaning up..."
 brew cleanup
