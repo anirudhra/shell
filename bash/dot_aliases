@@ -1,11 +1,12 @@
 ## Colorize the ls output ##
-#alias ls='ls --color=auto'
- 
+alias ls='ls -FG'
+#export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
+
 ## Use a long listing format ##
 alias ll='ls -la'
  
 ## Show hidden files ##
-alias l.='ls -d .* --color=auto'
+alias l.='ls -d .* -FG'
 
 ## get rid of command not found ##
 alias cd..='cd ..'
@@ -25,6 +26,8 @@ alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
 alias mkdir='mkdir -pv'
+alias md='mkdir'
+alias rd='rmdir'
 
 alias path='echo -e ${PATH//:/\\n}'
 alias now='date +"%T"'
@@ -64,5 +67,37 @@ alias wget='wget -c'
 ## set some other defaults ##
 alias df='df -H'
 alias du='du -ch'
+
+alias brew_update='brew update && brew upgrade && brew linkapps && brew cleanup'
+
+alias flushdns='dscacheutil -flushcache'
+
+alias lscleanup='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder'
+
+alias cdf='open .'
+
+alias cls='clear'
+alias dir='ls'
+
+# Tree
+if [ ! -x "$(which tree 2>/dev/null)" ]
+then
+  alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
+fi
+
+alias edit="$EDITOR"
+alias pager="$PAGER"
+
+# Desktop Programs
+alias preview="open -a '$PREVIEW'"
+alias xcode="open -a '/Applications/XCode.app'"
+alias filemerge="open -a '/Developer/Applications/Utilities/FileMerge.app'"
+alias safari="open -a safari"
+alias firefox="open -a firefox"
+alias chrome="open -a google\ chrome"
+alias textedit='open -a TextEdit'
+
+# Get rid of those pesky .DS_Store files recursively
+alias dsclean='find . -type f -name .DS_Store -delete'
 
 
