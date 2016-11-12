@@ -7,7 +7,6 @@ alias ll='ls -la'
  
 ## Show hidden files ##
 alias l.='ls -d .* -FG'
-alias sl='ls'
 
 ## get rid of command not found ##
 alias cd..='cd ..'
@@ -34,11 +33,6 @@ alias path='echo -e ${PATH//:/\\n}'
 alias now='date +"%T"'
 alias nowtime=now
 alias nowdate='date +"%d-%m-%Y"'
-
-alias vi=vim
-alias svi='sudo vi'
-alias vis='vim "+set si"'
-alias edit='vim'
 
 # Stop after sending count ECHO_REQUEST packets #
 alias ping='ping -c 5'
@@ -69,14 +63,21 @@ alias wget='wget -c'
 alias df='df -H'
 alias du='du -ch'
 
-alias brew_update='brew update && brew cask update && brew upgrade && brew linkapps && brew cleanup && brew cask cleanup'
+alias vim='mvim -v'
+alias vi='mvim -v'
+alias gvim='mvim'
+alias svi='sudo vi'
+alias svim='sudo vim'
+alias vis='vim "+set si"'
+alias edit='vim'
+
+alias brew_update='brew update && brew upgrade && brew cask update && brew linkapps && brew cleanup && brew cask cleanup && brew doctor && brew prune'
 
 alias flushdns='dscacheutil -flushcache'
 
 alias lscleanup='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder'
 
 alias cdf='open .'
-
 alias cls='clear'
 alias dir='ls'
 
@@ -102,4 +103,3 @@ alias textedit='open -a TextEdit'
 alias dsclean='find . -type f -name .DS_Store -delete'
 
 alias shuf='gshuf'
-
