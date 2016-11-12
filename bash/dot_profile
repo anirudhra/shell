@@ -4,7 +4,13 @@ test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shel
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export PATH="/usr/local/sbin:$PATH"
 
-source ~/.aliases
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
+
+export VISUAL='mvim -f'
+
+source /Users/aacharya/.aliases
 
 LESSPIPE=`which src-hilite-lesspipe.sh`
 export LESSOPEN="| ${LESSPIPE} %s"
@@ -12,7 +18,6 @@ export LESS=' -R -X -F '
 
 source ~/.office
 
-cowsay $(fortune -as)
+cowsay $(fortune -as) | lolcat
 #fortune -a | cowsay -f `ls -1 /usr/local/Cellar/cowsay/3.04/share/cows/*.cow | gshuf | head -1` -n
 echo
-
