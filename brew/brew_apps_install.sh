@@ -35,6 +35,7 @@ brew install figlet
 
 # gtk integration
 brew install gtk+
+brew install gtk+3
 brew install gtk-mac-integration
 brew install gtk-chtheme
 brew install gtk-engines
