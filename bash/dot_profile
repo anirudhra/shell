@@ -9,6 +9,7 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 fi
 
 export VISUAL='mvim -f'
+export GTK_PATH=/usr/local/lib/gtk-2.0
 
 source /Users/aacharya/.aliases
 
