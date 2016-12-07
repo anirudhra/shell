@@ -34,6 +34,7 @@ brew install coreutils
 brew install figlet
 
 # gtk integration
+brew install gtk+
 brew install gtk-mac-integration
 brew install gtk-chtheme
 brew install gtk-engines
