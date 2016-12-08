@@ -41,6 +41,7 @@ brew install gtk-mac-integration
 brew install gtk-chtheme
 brew install gtk-engines
 brew install gtk-murrine-engine
+brew install gnome-themes-standard
 # extract themes in /usr/local/Cellar/gtk+/2.24.31/share/themes
 
 echo "Installing command line apps... done!"
