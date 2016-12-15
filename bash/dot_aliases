@@ -72,7 +72,7 @@ alias vis='vim "+set si"'
 alias edit='vim'
 
 alias brew_update='brew update && brew upgrade && brew cask update && brew linkapps && brew cleanup && brew cask cleanup && brew doctor && brew prune'
-
+alias fix_wireshark='cd /dev && sudo chown aacharya:admin bp*'
 alias flushdns='dscacheutil -flushcache'
 
 alias lscleanup='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder'
