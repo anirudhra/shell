@@ -6,7 +6,7 @@ alias ls='ls -FG'
 alias ll='ls -la'
  
 ## Show hidden files ##
-alias l.='ls -d .* -FG'
+alias ls.='ls -d -FG .*'
 
 ## get rid of command not found ##
 alias cd..='cd ..'
@@ -33,6 +33,7 @@ alias path='echo -e ${PATH//:/\\n}'
 alias now='date +"%T"'
 alias nowtime=now
 alias nowdate='date +"%d-%m-%Y"'
+alias a='alias'
 
 # Stop after sending count ECHO_REQUEST packets #
 alias ping='ping -c 5'
@@ -45,36 +46,38 @@ alias ports='netstat -tulanp'
 alias root='sudo -i'
 alias su='sudo -i'
 
-## pass options to free ## 
-alias meminfo='free -m -l -t'
+## pass options to free ##, not for macos
+#alias meminfo='free -m -l -t'
  
 ## get top process eating memory
-alias psmem='ps auxf | sort -nr -k 4'
-alias psmem10='ps auxf | sort -nr -k 4 | head -10'
+alias psmem='ps aux | sort -nr -k 4'
+alias psmem10='ps aux | sort -nr -k 4 | head -10'
  
 ## get top process eating cpu ##
-alias pscpu='ps auxf | sort -nr -k 3'
-alias pscpu10='ps auxf | sort -nr -k 3 | head -10'
+alias pscpu='ps aux | sort -nr -k 3'
+alias pscpu10='ps aux | sort -nr -k 3 | head -10'
 
 ## this one saved by butt so many times ##
 alias wget='wget -c'
 
 ## set some other defaults ##
-alias df='df -H'
+alias df='df -h'
 alias du='du -ch'
 
 alias vim='mvim -v'
 alias vi='mvim -v'
 alias gvim='mvim'
 alias svi='sudo vi'
-alias svim='sudo vim'
 alias vis='vim "+set si"'
-alias edit='vim'
 
-alias brew_update='brew update && brew upgrade && brew cask update && brew linkapps && brew cleanup && brew cask cleanup && brew doctor && brew prune'
+alias edit="$EDITOR"
+alias pager="$PAGER"
+
+alias brew_update='brew update && brew upgrade && brew linkapps && brew cleanup && brew cask cleanup && brew doctor && brew update && brew prune'
+
 alias fix_wireshark='cd /dev && sudo chown aacharya:admin bp*'
-alias flushdns='dscacheutil -flushcache'
 
+alias flushdns='dscacheutil -flushcache'
 alias lscleanup='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder'
 
 alias cdf='open .'
@@ -87,8 +90,6 @@ then
   alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 fi
 
-alias edit="$EDITOR"
-alias pager="$PAGER"
 
 # Desktop Programs
 alias preview="open -a '$PREVIEW'"
@@ -99,7 +100,17 @@ alias firefox="open -a firefox"
 alias chrome="open -a google\ chrome"
 alias textedit='open -a TextEdit'
 
-# Get rid of those pesky .DS_Store files recursively
+# Get rid of .DS_Store files recursively
 alias dsclean='find . -type f -name .DS_Store -delete'
 
 alias shuf='gshuf'
+
+#cleanup caches
+alias cleanup='sudo update_dyld_shared_cache -force'
+alias fixoutlook='sudo update_dyld_shared_cache -force'
+
+#rename
+alias ren_jpg="rename 's/.JPG/.pndat/g' *.JPG && rename 's/.jpg/.pndat/g' *.jpg"
+alias ren_jpeg="rename 's/.JPEG/.pndat/g' *.JPEG && rename 's/.jpeg/.pndat/g' *.jpeg"
+alias ren_png="rename 's/.PNG/.pndat/g' *.PNG && rename 's/.png/.pndat/g' *.png"
+

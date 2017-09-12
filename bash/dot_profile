@@ -2,7 +2,7 @@
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/sbin:/usr/local/opt/qt5/bin:$PATH"
 
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
@@ -10,6 +10,7 @@ fi
 
 export VISUAL='mvim -f'
 export GTK_PATH=/usr/local/lib/gtk-2.0
+export PKG_CONFIG_PATH=/usr/local/Cellar/cairo/1.10.2/lib/pkgconfig
 
 source /Users/aacharya/.aliases
 
@@ -19,6 +20,7 @@ export LESS=' -R -X -F '
 
 source ~/.office
 
-cowsay $(fortune -as) | lolcat
+cowsay $(fortune -as)
 #fortune -a | cowsay -f `ls -1 /usr/local/Cellar/cowsay/3.04/share/cows/*.cow | gshuf | head -1` -n
 echo
+
