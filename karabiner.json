@@ -748,111 +748,274 @@
                         ]
                     },
                     {
-                      "description": "Launch apps",
-                      "manipulators": [
-                        {
-                          "from": {
-                            "key_code": "f",
-                            "modifiers": {
-                              "mandatory": [
-                                "left_control",
-                                "left_option"
-                              ],
-                              "optional": [
-                                "caps_lock"
-                              ]
-                            }
-                          },
-                          "to": [
+                        "description": "Launch apps",
+                        "manipulators": [
                             {
-                              "shell_command": "open -a 'Finder.app' ~"
-                            }
-                          ],
-                          "type": "basic"
-                        },
-                        {
-                          "from": {
-                            "key_code": "p",
-                            "modifiers": {
-                              "mandatory": [
-                                "left_control",
-                                "left_option"
-                              ],
-                              "optional": [
-                                "caps_lock"
-                              ]
-                            }
-                          },
-                          "to": [
+                                "from": {
+                                    "key_code": "f",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_shift",
+                                            "left_command",
+                                            "left_control",
+                                            "left_option"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open -a 'Finder.app' ~"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
                             {
-                              "shell_command": "open -a 'p4v.app'"
-                            }
-                          ],
-                          "type": "basic"
-                        },
-                        {
-                          "from": {
-                            "key_code": "g",
-                            "modifiers": {
-                              "mandatory": [
-                                "left_control",
-                                "left_option"
-                              ],
-                              "optional": [
-                                "caps_lock"
-                              ]
-                            }
-                          },
-                          "to": [
+                                "from": {
+                                    "key_code": "4",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_shift",
+                                            "left_command",
+                                            "left_control",
+                                            "left_option"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open -a 'p4v.app'"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
                             {
-                              "shell_command": "open -a 'Google Chrome.app'"
-                            }
-                          ],
-                          "type": "basic"
-                        },
-                        {
-                          "from": {
-                            "key_code": "o",
-                            "modifiers": {
-                              "mandatory": [
-                                "left_control",
-                                "left_option"
-                              ],
-                              "optional": [
-                                "caps_lock"
-                              ]
-                            }
-                          },
-                          "to": [
+                                "from": {
+                                    "key_code": "v",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_shift",
+                                            "left_command",
+                                            "left_control",
+                                            "left_option"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open -a 'MacVim.app'"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
                             {
-                              "shell_command": "open -a '/Applications/Microsoft Outlook.app'"
-                            }
-                          ],
-                          "type": "basic"
-                        },
-                        {
-                          "from": {
-                            "key_code": "s",
-                            "modifiers": {
-                              "mandatory": [
-                                "left_control",
-                                "left_option"
-                              ],
-                              "optional": [
-                                "caps_lock"
-                              ]
-                            }
-                          },
-                          "to": [
+                                "from": {
+                                    "key_code": "t",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_shift",
+                                            "left_command",
+                                            "left_control",
+                                            "left_option"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open -a 'iTerm.app'"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
                             {
-                              "shell_command": "open -a '/Applications/Skype for Business.app'"
+                                "from": {
+                                    "key_code": "p",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_shift",
+                                            "left_command",
+                                            "left_control",
+                                            "left_option"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open -a '/Applications/Microsoft Powerpoint.app'"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "e",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_shift",
+                                            "left_command",
+                                            "left_control",
+                                            "left_option"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open -a '/Applications/Microsoft Excel.app'"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "w",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_shift",
+                                            "left_command",
+                                            "left_control",
+                                            "left_option"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open -a '/Applications/Microsoft Word.app'"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "t",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_shift",
+                                            "left_command",
+                                            "left_control",
+                                            "left_option"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open -a 'iTerm.app'"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "p",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_shift",
+                                            "left_command",
+                                            "left_control",
+                                            "left_option"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open -a 'p4v.app'"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "g",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_shift",
+                                            "left_command",
+                                            "left_control",
+                                            "left_option"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open -a 'Google Chrome.app'"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "o",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_shift",
+                                            "left_command",
+                                            "left_control",
+                                            "left_option"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open -a '/Applications/Microsoft Outlook.app'"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "s",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_shift",
+                                            "left_command",
+                                            "left_control",
+                                            "left_option"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open -a '/Applications/Skype for Business.app'"
+                                    }
+                                ],
+                                "type": "basic"
                             }
-                          ],
-                          "type": "basic"
-                        }
-                      ]
+                        ]
                     },
-                            
                     {
                         "description": "PC-Style Screenshot(PrtSc for whole, Shift+PrtSc to select)",
                         "manipulators": [
@@ -948,6 +1111,51 @@
                                         "modifiers": [
                                             "left_command",
                                             "left_shift"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Change caps_lock key to command+control+option+shift. (Use shift+caps_lock as caps_lock)",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "caps_lock",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "shift"
+                                        ],
+                                        "optional": [
+                                            "caps_lock"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "caps_lock"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "caps_lock",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_shift",
+                                        "modifiers": [
+                                            "left_command",
+                                            "left_control",
+                                            "left_option"
                                         ]
                                     }
                                 ],
@@ -1118,6 +1326,22 @@
                 },
                 {
                     "from": {
+                        "consumer_key_code": "scan_next_track"
+                    },
+                    "to": {
+                        "key_code": "fastforward"
+                    }
+                },
+                {
+                    "from": {
+                        "consumer_key_code": "scan_previous_track"
+                    },
+                    "to": {
+                        "key_code": "rewind"
+                    }
+                },
+                {
+                    "from": {
                         "key_code": "keypad_num_lock"
                     },
                     "to": {
@@ -1146,22 +1370,6 @@
                     },
                     "to": {
                         "key_code": "right_command"
-                    }
-                },
-                {
-                    "from": {
-                        "consumer_key_code": "scan_previous_track"
-                    },
-                    "to": {
-                        "key_code": "rewind"
-                    }
-                },
-                {
-                    "from": {
-                        "consumer_key_code": "scan_next_track"
-                    },
-                    "to": {
-                        "key_code": "fastforward"
                     }
                 }
             ],
