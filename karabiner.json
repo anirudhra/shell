@@ -818,7 +818,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "t",
+                                    "key_code": "r",
                                     "modifiers": {
                                         "mandatory": [
                                             "left_shift",
@@ -833,7 +833,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a 'iTerm.app'"
+                                        "shell_command": "open -a '/Applications/Vienna.app'"
                                     }
                                 ],
                                 "type": "basic"
@@ -906,6 +906,28 @@
                             },
                             {
                                 "from": {
+                                    "key_code": "x",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_shift",
+                                            "left_command",
+                                            "left_control",
+                                            "left_option"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open -a '/Applications/Sublime Text.app'"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
                                     "key_code": "t",
                                     "modifiers": {
                                         "mandatory": [
@@ -922,28 +944,6 @@
                                 "to": [
                                     {
                                         "shell_command": "open -a 'iTerm.app'"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "p",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_shift",
-                                            "left_command",
-                                            "left_control",
-                                            "left_option"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "shell_command": "open -a 'p4v.app'"
                                     }
                                 ],
                                 "type": "basic"
@@ -1296,7 +1296,7 @@
                         "product_id": 50475,
                         "vendor_id": 1133
                     },
-                    "ignore": false,
+                    "ignore": true,
                     "simple_modifications": []
                 },
                 {
@@ -1308,7 +1308,7 @@
                         "product_id": 65535,
                         "vendor_id": 1452
                     },
-                    "ignore": false,
+                    "ignore": true,
                     "simple_modifications": []
                 }
             ],
