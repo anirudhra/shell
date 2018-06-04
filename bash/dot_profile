@@ -1,8 +1,12 @@
+source /Users/aacharya/.aliases
+source ~/.office
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
+export HOMEBREW_NO_ANALYTICS=1
+export GOPATH=$HOME/go
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-export PATH="/usr/local/sbin:/usr/local/opt/qt5/bin:$PATH"
+export PATH=".:/usr/local/opt/curl/bin:/usr/local/sbin:/usr/local/opt/qt/bin:$PATH:$GOPATH"
 
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
@@ -12,15 +16,15 @@ export VISUAL='mvim -f'
 export GTK_PATH=/usr/local/lib/gtk-2.0
 export PKG_CONFIG_PATH=/usr/local/Cellar/cairo/1.10.2/lib/pkgconfig
 
-source /Users/aacharya/.aliases
-
 LESSPIPE=`which src-hilite-lesspipe.sh`
 export LESSOPEN="| ${LESSPIPE} %s"
 export LESS=' -R -X -F '
 
-source ~/.office
-
 cowsay $(fortune -as)
-#fortune -a | cowsay -f `ls -1 /usr/local/Cellar/cowsay/3.04/share/cows/*.cow | gshuf | head -1` -n
 echo
+
+#to convert Qt Creater GUI to python
+#ui2py () { pyuic5 "$1" -o "$1".py; }
+ui2py () { local fn=$(echo $1 | tr '.ui' '_ui'); pyuic5 "$1" -o "$fn".py; }
+
 
