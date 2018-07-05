@@ -1432,7 +1432,7 @@
                                 "consumer_key_code": "eject"
                             },
                             "to": {
-                                "key_code": "launchpad"
+                                "key_code": "delete_forward"
                             }
                         },
                         {
@@ -1638,6 +1638,7 @@
             ],
             "virtual_hid_keyboard": {
                 "caps_lock_delay_milliseconds": 0,
+                "country_code": 0,
                 "keyboard_type": "ansi"
             }
         },
@@ -1755,6 +1756,7 @@
             "simple_modifications": [],
             "virtual_hid_keyboard": {
                 "caps_lock_delay_milliseconds": 0,
+                "country_code": 0,
                 "keyboard_type": "ansi"
             }
         }
