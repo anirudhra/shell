@@ -5,14 +5,16 @@ test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shel
 
 export HOMEBREW_NO_ANALYTICS=1
 export GOPATH=$HOME/go
+export GOROOT=/usr/local/opt/go/libexec/bin
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-export PATH=".:/usr/local/opt/curl/bin:/usr/local/sbin:/usr/local/opt/qt/bin:$PATH:$GOPATH"
+export PATH=".:/usr/local/opt/curl/bin:/usr/local/sbin:/usr/local/opt/qt/bin:$GOROOT:$GOPATH:$PATH"
 
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
 
 export VISUAL='mvim -f'
+export EDITOR='vim'
 export GTK_PATH=/usr/local/lib/gtk-2.0
 export PKG_CONFIG_PATH=/usr/local/Cellar/cairo/1.10.2/lib/pkgconfig
 
@@ -23,8 +25,13 @@ export LESS=' -R -X -F '
 cowsay $(fortune -as)
 echo
 
+export EDITOR='vim'
+
 #to convert Qt Creater GUI to python
 #ui2py () { pyuic5 "$1" -o "$1".py; }
 ui2py () { local fn=$(echo $1 | tr '.ui' '_ui'); pyuic5 "$1" -o "$fn".py; }
 
+#PS VITA SDK
+export VITASDK=/usr/local/vitasdk
+export PATH=$VITASDK/bin:$PATH
 
