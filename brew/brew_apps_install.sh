@@ -4,9 +4,9 @@
 # command line apps
 #
 echo "Installing command line apps..."
-brew tap homebrew/dupes
+#brew tap homebrew/dupes
 brew install wget
-brew install homebrew/dupes/tidy
+#brew install homebrew/dupes/tidy
 brew install node
 brew install imagemagick
 brew install ack
@@ -14,7 +14,8 @@ brew install fortune
 brew install cowsay
 brew install colordiff
 brew install gawk
-brew install gnu-sed --with-default-names
+#brew install gnu-sed --with-default-names
+brew install gnu-sed
 brew install p7zip
 brew install pv
 brew install sshfs
@@ -23,7 +24,7 @@ brew install calc
 brew install dos2unix
 brew install ext2fuse
 brew install ext4fuse
-brew install homebrew/dupes/grep
+#brew install homebrew/dupes/grep
 brew install nmap
 brew install ntfs-3g
 brew install rename
@@ -50,19 +51,19 @@ echo "Installing command line apps... done!"
 # cask gui apps
 #
 echo "Installing GUI apps..."
-brew cask install textexpander
-brew cask install macvim
-brew cask install alfred
-brew cask install gimp
-brew cask install xquartz
-brew cask install osxfuse
+brew install --cask textexpander
+brew install --cask macvim
+brew install --cask alfred
+brew install --cask gimp
+brew install --cask xquartz
+brew install --cask osxfuse
 
 echo "Installing GUI apps... done!"
 
-brew linkapps
+#brew linkapps
 
 echo "Cleaning up..."
 brew cleanup
-brew cask cleanup
+#brew cask cleanup
 echo "Cleaning up... done!"
 
