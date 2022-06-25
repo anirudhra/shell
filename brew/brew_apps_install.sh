@@ -4,6 +4,8 @@
 # command line apps
 #
 echo "Installing command line apps..."
+brew install romkatv/powerlevel10k/powerlevel10k
+echo 'source $(brew --prefix powerlevel10k)/powerlevel10k.zsh-theme' >>! ~/.zshrc
 #brew tap homebrew/dupes
 brew install wget
 #brew install homebrew/dupes/tidy
