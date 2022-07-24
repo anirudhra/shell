@@ -15,6 +15,7 @@ brew install ack
 brew install fortune
 brew install cowsay
 brew install colordiff
+brew install neofetch
 brew install gawk
 #brew install gnu-sed --with-default-names
 brew install gnu-sed
@@ -26,6 +27,8 @@ brew install calc
 brew install dos2unix
 brew install ext2fuse
 brew install ext4fuse
+brew install python-tk
+brew install tcl-tk
 #brew install homebrew/dupes/grep
 brew install nmap
 brew install ntfs-3g
@@ -53,12 +56,11 @@ echo "Installing command line apps... done!"
 # cask gui apps
 #
 echo "Installing GUI apps..."
-brew install --cask textexpander
-brew install --cask macvim
-brew install --cask alfred
-brew install --cask gimp
-brew install --cask xquartz
-brew install --cask osxfuse
+brew install macvim --cask
+brew install alfred --cask
+brew install gimp --cask
+brew install xquartz --cask
+brew install macfuse --cask
 
 echo "Installing GUI apps... done!"
 
