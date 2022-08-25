@@ -2,6 +2,7 @@ source ~/.aliases
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
+export MKL_DEBUG_CPU_TYPE=5
 export HOMEBREW_NO_ANALYTICS=1
 export GOPATH=$HOME/go
 export GOROOT=/usr/local/opt/go/libexec/bin
@@ -22,7 +23,10 @@ LESSPIPE=`which src-hilite-lesspipe.sh`
 export LESSOPEN="| ${LESSPIPE} %s"
 export LESS=' -R -X -F '
 
+echo
 cowsay $(fortune -s)
+echo
+neofetch
 echo
 
 export EDITOR='vim'
