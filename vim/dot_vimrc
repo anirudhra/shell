@@ -15,6 +15,7 @@ set showmatch
 set incsearch
 set hlsearch
 "set foldenable
+set termguicolors
 
 "pathogen plugin manager
 execute pathogen#infect()
@@ -28,9 +29,10 @@ set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set writebackup
 
 
-set guifont=Menlo\ Regular:h12
+set guifont=Menlo\ Regular:h15
 "set guifont=Monospace\ Regular:h12
-colorscheme lucario
+"colorscheme lucario
+colorscheme catppuccin_macchiato
 set guioptions-=T
 
 set diffexpr=MyDiff()
