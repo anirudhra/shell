@@ -72,10 +72,11 @@ alias df='df -P -h'
 alias du='du -ch'
 
 #alias vim='mvim -v'
-alias vim='mvim'
+alias vim='nvim'
 #alias vi='mvim -v'
 alias vi='nvim'
-alias gvim='mvim'
+#alias gvim='mvim'
+alias gvim='vimr'
 alias sudovi='sudo nvim'
 alias vis='nvim "+set si"'
 
@@ -86,7 +87,7 @@ alias pager="$PAGER"
 #alias brew_update='brew tap homebrew/cask && brew update --greedy && brew upgrade && brew cleanup && brew doctor && brew update && brew cleanup'
 alias brew_update='brew update --greedy && brew upgrade && brew cleanup && brew doctor && brew update && brew cleanup'
 
-alias fix_wireshark='cd /dev && sudo chown aacharya:admin bp*; cd -'
+alias fix_wireshark='cd /dev && sudo chown anirudh:anirudh bp*; cd -'
 
 alias flushdns='dscacheutil -flushcache'
 alias lscleanup='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder'
@@ -159,6 +160,7 @@ alias sshserver='ssh -o MACs=hmac-sha2-256 alarm@10.100.100.99'
 alias sshpve='ssh -o MACs=hmac-sha2-256 root@10.100.100.95'
 alias sshvega='ssh -o MACs=hmac-sha2-256 root@10.100.100.158'
 alias sshblanka='ssh -o MACs=hmac-sha2-256 root@10.100.100.221'
+alias sshjf='ssh -o MACs=hmac-sha2-256 root@10.100.100.171'
 
 alias gooc='cd ~/Downloads/OpenCore'
 
@@ -176,3 +178,4 @@ mkcd()
         ;;
     esac
 }
+
