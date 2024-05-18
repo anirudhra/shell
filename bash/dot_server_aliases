@@ -1,0 +1,59 @@
+## Colorize the ls output ##
+alias ls='ls -FG'
+#export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
+
+## Use a long listing format ##
+alias ll='ls -la | less'
+ 
+## Show hidden files ##
+alias ls.='ls -d -FG .*'
+
+## get rid of command not found ##
+alias cd..='cd ..'
+ 
+## a quick way to get out of current directory ##
+alias cd..='cd ..'
+alias ..='cd ..'
+alias ...='cd ../../../'
+alias ....='cd ../../../../'
+alias .....='cd ../../../../'
+alias .4='cd ../../../../'
+alias .5='cd ../../../../..'
+
+## Colorize the grep command output for ease of use (good for log files)##
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+alias mkdir='mkdir -pv'
+alias md='mkdir'
+alias rd='rmdir'
+
+##################
+alias please='sudo $( history -p !! )'
+alias gh='history | grep'
+alias count='find . -type f | wc -l'
+alias listps='ps aux | grep -v "ps aux" | grep -Ev "\[.+\]" | grep -v grep'
+
+#alias vim='nano'
+#alias vi='nano'
+alias fullclean='apt clean && apt autoclean && apt autoremove'
+alias fullupdate='apt update && apt dist-upgrade'
+
+#docker
+alias dockerup='docker compose up -d'
+alias dockerdown='docker compose down'
+alias dockerupdate='docker compose down && docker compose pull && docker compose up -d --remove-orphans && docker image prune'
+alias dockerbackup='sudo tar -zcvf ~/dockerapps_blanka.tar.gz /mnt/nfs-ssd/ssd-data/dockerapps'
+#alias dockerbackup='sudo tar -zcvf ~/dockerapps.tar.gz /opt/dockerapps'
+alias godocker='cd /mnt/nfs-ssd/ssd-data/dockerapps'
+#alias godocker='cd /opt/dockerapps'
+alias dockerclean='docker system prune --volumes'
+alias dockerrestart='docker compose down && docker compose up -d'
+
+alias sshrouter='ssh admin@10.100.100.1'
+alias pingrouter='ping 10.100.100.1'
+alias pingserverwifi='ping 10.100.100.95'
+alias pingserver='ping 10.100.100.95'
+alias sshserverwifi='ssh -o MACs=hmac-sha2-256 root@10.100.100.95'
+alias sshserver='ssh -o MACs=hmac-sha2-256 root@10.100.100.95'
