@@ -42,6 +42,9 @@ alias listps='ps aux | grep -v "ps aux" | grep -Ev "\[.+\]" | grep -v grep'
 alias fullclean='apt clean && apt autoclean && apt autoremove'
 alias fullupdate='apt update && apt dist-upgrade'
 
+# Get rid of .DS_Store files recursiveloy in current directory tree
+alias dsclean='find . -type f -name .DS_Store -delete'
+
 #docker
 alias dockerup='docker compose up -d'
 alias dockerdown='docker compose down'
@@ -55,8 +58,8 @@ alias dockerrestart='docker compose down && docker compose up -d'
 
 alias sshrouter='ssh admin@10.100.100.1'
 alias pingrouter='ping 10.100.100.1'
-alias pingserverwifi='ping 10.100.100.95'
-alias pingserver='ping 10.100.100.95'
+alias pingserverwifi='ping 10.100.100.50'
+alias pingserver='ping 10.100.100.50'
 alias sshserverwifi='ssh -o MACs=hmac-sha2-256 root@10.100.100.95'
 alias sshserver='ssh -o MACs=hmac-sha2-256 root@10.100.100.95'
 alias sshvega='ssh -o MACs=hmac-sha2-256 root@10.100.100.99'
