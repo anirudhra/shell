@@ -105,6 +105,23 @@ alias textedit='open -a TextEdit'
 alias dsclean='find . -type f -name .DS_Store -delete && find . -type f -name ._.DS_Store -delete'
 alias shuf='gshuf'
 
+alias sshrouter='ssh admin@10.100.100.1 -p 12372'
+alias pingrouter='ping 10.100.100.1'
+alias sshpve='ssh -o MACs=hmac-sha2-256 root@10.100.100.50'
+alias pingserverwifi='ping 10.100.100.50'
+alias pingserver='ping 10.100.100.50'
+
+alias sshblanka='ssh -o MACs=hmac-sha2-256 root@10.100.100.65'
+alias sshha='ssh -o MACs=hmac-sha2-256 root@10.100.100.70'
+alias sshjf='ssh -o MACs=hmac-sha2-256 root@10.100.100.90'
+alias sshkodi='ssh -o MACs=hmac-sha2-256 root@10.100.100.80'
+alias sshnextcloud='ssh -o MACs=hmac-sha2-256 root@10.100.100.85'
+alias sshplex='ssh -o MACs=hmac-sha2-256 root@10.100.100.75'
+alias sshrouter='ssh admin@10.100.100.1'
+alias sshvega='ssh -o MACs=hmac-sha2-256 root@10.100.100.60'
+alias sshventoy='ssh -o MACs=hmac-sha2-256 root@10.100.100.51'
+alias sshwg='ssh -o MACs=hmac-sha2-256 root@10.100.100.55'
+
 #cleanup caches
 alias cleanup='sudo update_dyld_shared_cache -force'
 alias fixoutlook='cleanup'
