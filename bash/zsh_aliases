@@ -22,6 +22,7 @@ alias .5='cd ../../../../..'
 
 ## Colorize the grep command output for ease of use (good for log files)##
 alias grep='grep --color=auto'
+alias grepc='grep --color=always'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
@@ -143,6 +144,7 @@ export LESS=" -R "
 alias less='less -m -N -g -i -J --underline-special --SILENT'
 alias more='less'
 alias cat='less'
+alias lessc='less -R'
 #alias ui2py="pyuic5 $1 -o $1+.py"
 
 alias ipy="jupyter lab ~/code/jupyter"
